@@ -4235,7 +4235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5602fcbed8e10e4ebadde3f6e306e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerMiniSpeed: 3
+  _playerMiniSpeed: 4
   itemCount: 0
   itemCountText: {fileID: 1770199726}
 --- !u!114 &2084778056

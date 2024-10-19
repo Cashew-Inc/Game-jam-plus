@@ -8,7 +8,6 @@ public class FinishGame : MonoBehaviour
     {
         if (collision.CompareTag("Player") && !hasWon)
         {
-            Debug.Log("fhuefpu");
             winGame();
         }
     }
