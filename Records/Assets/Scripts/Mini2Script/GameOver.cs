@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement; 
 public class GameOver : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public string gameOverSceneName;
+    private bool isGameOver = false;
+
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        Debug.Log("dsofgoaiugo");
+        if (collision.gameObject.CompareTag("Stone") && !isGameOver)
+        {
+            TriggerGameOver();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void TriggerGameOver()
     {
-        
+        isGameOver = true;
+        SceneManager.LoadScene(gameOverSceneName);
     }
 }
