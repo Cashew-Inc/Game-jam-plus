@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Stone
   - FinishLine
+  - Itens
+  - player
+  - ground
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerMini1 : MonoBehaviour
 {
@@ -9,6 +11,9 @@ public class PlayerMini1 : MonoBehaviour
     private Vector2 _playerDirection;
     private Animator _playerAnim;
     private SpriteRenderer _playerSprite;
+    public int itemCount = 0;
+    public TMP_Text itemCountText;
+    
     // Start is called before the first frame update
 
     void Start()
@@ -17,11 +22,10 @@ public class PlayerMini1 : MonoBehaviour
         _playerAnim = GetComponent<Animator>();
         _playerSprite = GetComponent<SpriteRenderer>();
     }
-
     // Update is called once per frame
     private void FixedUpdate()
     {
-        MoveOn();
+        MoveOn(); // Resete o contador se o jogador estiver no chão
     }
 
     private void ResetLayers()
@@ -61,4 +65,23 @@ public class PlayerMini1 : MonoBehaviour
             _playerAnim.SetBool("walk", false);
         }
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Colidiu");
+    }
+
+    public void IncrementItemCount()
+    {
+        itemCount++;
+        UpdateItemCountText();
+    }
+
+    private void UpdateItemCountText()
+    {
+        if (itemCountText != null)
+        {
+            itemCountText.text = itemCount + " pts" ; // Atualiza o texto
+        }
+    }
+
 }
