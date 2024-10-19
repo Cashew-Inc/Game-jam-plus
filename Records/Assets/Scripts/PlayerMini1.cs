@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerMini1 : MonoBehaviour
 {
@@ -9,6 +11,9 @@ public class PlayerMini1 : MonoBehaviour
     private Vector2 _playerDirection;
     private Animator _playerAnim;
     private SpriteRenderer _playerSprite;
+    public int itemCount = 0;
+    public TMP_Text itemCountText;
+
     // Start is called before the first frame update
 
     void Start()
@@ -59,6 +64,25 @@ public class PlayerMini1 : MonoBehaviour
         else
         {
             _playerAnim.SetBool("walk", false);
+        }
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Colidiu");
+    }
+
+    public void IncrementItemCount()
+    {
+        itemCount++;
+        UpdateItemCountText();
+        Debug.Log("Itens coletados: " + itemCount);
+    }
+
+    private void UpdateItemCountText()
+    {
+        if (itemCountText != null)
+        {
+            itemCountText.text = itemCount + " pts" ; // Atualiza o texto
         }
     }
 }
