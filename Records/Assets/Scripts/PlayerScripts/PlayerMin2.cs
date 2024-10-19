@@ -18,7 +18,7 @@ public class PlayerMini2 : MonoBehaviour
         new Vector2(5, 0)
     };
 
-    private int currentPositionIndex = 0;
+    private int currentPositionIndex = 2;
 
     void Start()
     {

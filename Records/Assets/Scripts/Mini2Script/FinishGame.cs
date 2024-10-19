@@ -2,12 +2,25 @@ using UnityEngine;
 
 public class FinishGame : MonoBehaviour
 {
+    public GameObject winCanvas;
+    private bool hasWon = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("A pipa é gente boa");
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !hasWon)
         {
-            Debug.Log("Vai se fuder pipa");
+            Debug.Log("fhuefpu");
+            winGame();
         }
+    }
+
+    public void winGame()
+    {
+        hasWon = true;
+        winCanvas.SetActive(true);
+    }
+
+    public bool getHasWon()
+    {
+        return hasWon;
     }
 }
