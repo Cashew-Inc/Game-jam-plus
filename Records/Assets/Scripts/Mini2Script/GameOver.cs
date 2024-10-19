@@ -1,13 +1,14 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; 
 public class GameOver : MonoBehaviour
 {
-    public string gameOverSceneName;
+    public GameObject loseCanvas;
     private bool isGameOver = false;
-
+    void Start()
+    {
+        loseCanvas.SetActive(false);
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("dsofgoaiugo");
         if (collision.gameObject.CompareTag("Stone") && !isGameOver)
         {
             TriggerGameOver();
@@ -17,6 +18,7 @@ public class GameOver : MonoBehaviour
     void TriggerGameOver()
     {
         isGameOver = true;
-        SceneManager.LoadScene(gameOverSceneName);
+        loseCanvas.SetActive(true);
+        Time.timeScale = 0;
     }
 }
