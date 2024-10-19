@@ -13,7 +13,7 @@ public class PlayerMini1 : MonoBehaviour
     private SpriteRenderer _playerSprite;
     public int itemCount = 0;
     public TMP_Text itemCountText;
-
+    
     // Start is called before the first frame update
 
     void Start()
@@ -22,11 +22,10 @@ public class PlayerMini1 : MonoBehaviour
         _playerAnim = GetComponent<Animator>();
         _playerSprite = GetComponent<SpriteRenderer>();
     }
-
     // Update is called once per frame
     private void FixedUpdate()
     {
-        MoveOn();
+        MoveOn(); // Resete o contador se o jogador estiver no chão
     }
 
     private void ResetLayers()
@@ -75,7 +74,6 @@ public class PlayerMini1 : MonoBehaviour
     {
         itemCount++;
         UpdateItemCountText();
-        Debug.Log("Itens coletados: " + itemCount);
     }
 
     private void UpdateItemCountText()
@@ -85,4 +83,5 @@ public class PlayerMini1 : MonoBehaviour
             itemCountText.text = itemCount + " pts" ; // Atualiza o texto
         }
     }
+
 }
