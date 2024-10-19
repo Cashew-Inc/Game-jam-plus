@@ -16,10 +16,20 @@ public class ItensDestroy : MonoBehaviour
             }
             // Destroi o item após a colisão
             Destroy(gameObject);
-        }
-        else if (collision.gameObject.tag == "ground")
+        } else if (collision.gameObject.CompareTag("ground"))
         {
-            Destroy(gameObject);
+            // Encontra o script PlayerLives no GameObject do jogador
+            GameObject player = GameObject.FindWithTag("player");
+            if (player != null)
+            {
+                Player1Lives playerLives = player.GetComponent<Player1Lives>();
+                if (playerLives != null)
+                {
+                    playerLives.DecreaseLife(); // Chama o método para diminuir a vida
+                }
+            }
+
+            Destroy(gameObject); // Destroi o item após a colisão
         }
     }
 
