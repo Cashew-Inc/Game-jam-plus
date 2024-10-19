@@ -50,7 +50,6 @@ public class PlayerController : MonoBehaviour
             }
 
         }
-
         if (_playerDirection.y < 0 && _playerDirection.x == 0)
         {
             ResetLayers();
@@ -62,6 +61,7 @@ public class PlayerController : MonoBehaviour
             ResetLayers();
             _playerAnim.SetLayerWeight(0, 1);
         }
+
 
         if (_playerDirection != Vector2.zero)
         {
