@@ -228,7 +228,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "KNFAKNFKANSFSAKNSFSAKSFNSS\xC7AKNSFAFKSNFKANK\xC7FKNASNFAKF\xC7AKN"
+  m_text: "Apos uma longa e exaustiva jornada de trabalho, Francis olha para sua
+    mesa repleta de consoles que demorou anos para conseguir. Ele se lembra da inf\xE2ncia,
+    dos sonhos de um dia ter todos aqueles videogames..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 421d74ed1dd6524468e4ff256ed463f8, type: 2}
   m_sharedMaterial: {fileID: 6358587551808773041, guid: 421d74ed1dd6524468e4ff256ed463f8, type: 2}
@@ -255,8 +257,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -621,7 +623,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: af2acfdf0b08db745b14f9a47642fe63, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cbbb627dd137bee48877e6cfbbc37a6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -830,7 +832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: af2acfdf0b08db745b14f9a47642fe63, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f49247eec4ac3f845a3dc89b8958cd3e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -905,7 +907,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 532a7f389f98dba49b0a61cdb0866ff6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf6c88848e42f8e4eb6e3906c5d6f9b3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1193,7 +1195,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "agdgsdgsdgsgsgsdgssfnsafnalk\xE7nsfkalnsfkafk\xE7anfan"
+  m_text: " ... mas agora, exausto, mal consegue jogar.\nFrustrado por n\xE3o ter
+    tempo para aproveitar aquilo que sempre quis, ele se deita com esse pensamento."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 421d74ed1dd6524468e4ff256ed463f8, type: 2}
   m_sharedMaterial: {fileID: 6358587551808773041, guid: 421d74ed1dd6524468e4ff256ed463f8, type: 2}
@@ -1220,8 +1223,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1371,7 +1374,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: afhfbbajbnjsnbsfajblfajsbfsssanslfabnljsbfajfbsajbfjabfjsbfjbajfa
+  m_text: "Ao adormecer, Francis acorda no banco de tr\xE1s do carro de seu pai,
+    agora como uma crian\xE7a novamente. Sem entender direito o que est\xE1 acontecendo,
+    ele logo reconhece o caminho. Est\xE3o indo para o fliperama que ele costumava
+    frequentar quando era pequeno. No entanto, ao chegar, algo parece diferente..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 421d74ed1dd6524468e4ff256ed463f8, type: 2}
   m_sharedMaterial: {fileID: 6358587551808773041, guid: 421d74ed1dd6524468e4ff256ed463f8, type: 2}
@@ -1398,8 +1404,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
