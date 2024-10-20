@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8352109854569142623}
   - component: {fileID: 4846585622272980176}
   - component: {fileID: 4898667579650671092}
+  - component: {fileID: 3698603025849005955}
   m_Layer: 0
   m_Name: Copo-jogodogato_0 (1)
   m_TagString: Itens
@@ -171,3 +172,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fa3fb36c7c8acb478f9e6434f006d95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3698603025849005955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821726437138849188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad765c106d572a84aa898a3217a4fa67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSpeed: 5
+  rotationSpeed: 100

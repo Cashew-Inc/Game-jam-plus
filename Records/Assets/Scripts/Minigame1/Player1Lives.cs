@@ -42,7 +42,7 @@ public class Player1Lives : MonoBehaviour
     {
         if (livesText != null)
         {
-            livesText.text = currentLives + "Vidas "; // Atualiza o texto
+            livesText.text = currentLives + " Vidas "; // Atualiza o texto
         }
     }
     private void GameOver()

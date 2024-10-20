@@ -6,6 +6,7 @@ public class FinishGame : MonoBehaviour
     public AudioSource winAudioSource;
     public AudioSource backgroundAudioSource;
     private bool hasWon = false;
+    public GameOverHUD GameOverHUD;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -18,7 +19,8 @@ public class FinishGame : MonoBehaviour
     public void winGame()
     {
         hasWon = true;
-        winCanvas.SetActive(true);
+        GameOverHUD.ShowGameOver();
+
 
         // Parar o áudio de fundo
         if (backgroundAudioSource != null && backgroundAudioSource.isPlaying)

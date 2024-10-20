@@ -230,7 +230,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Apos uma longa e exaustiva jornada de trabalho, Francis olha para sua
     mesa repleta de consoles que demorou anos para conseguir. Ele se lembra da inf\xE2ncia,
-    dos sonhos de um dia ter todos aqueles videogames..."
+    dos sonhos de um dia ter e jogar todos aqueles videogames..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 421d74ed1dd6524468e4ff256ed463f8, type: 2}
   m_sharedMaterial: {fileID: 6358587551808773041, guid: 421d74ed1dd6524468e4ff256ed463f8, type: 2}
@@ -472,6 +472,8 @@ PlayableDirector:
     value: {fileID: 1920848072}
   - key: {fileID: 7534424675215296709, guid: cd9a66e5080fb994e9a195adcee300e4, type: 2}
     value: {fileID: 979382665}
+  - key: {fileID: 7735736302239821112, guid: cd9a66e5080fb994e9a195adcee300e4, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &682500548
@@ -1196,7 +1198,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: " ... mas agora, exausto, mal consegue jogar.\nFrustrado por n\xE3o ter
-    tempo para aproveitar aquilo que sempre quis, ele se deita com esse pensamento."
+    tempo para aproveitar aquilo que sempre quis, ele se deita com esse pensamento
+    na cabe\xE7a."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 421d74ed1dd6524468e4ff256ed463f8, type: 2}
   m_sharedMaterial: {fileID: 6358587551808773041, guid: 421d74ed1dd6524468e4ff256ed463f8, type: 2}
@@ -1374,10 +1377,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ao adormecer, Francis acorda no banco de tr\xE1s do carro de seu pai,
-    agora como uma crian\xE7a novamente. Sem entender direito o que est\xE1 acontecendo,
-    ele logo reconhece o caminho. Est\xE3o indo para o fliperama que ele costumava
-    frequentar quando era pequeno. No entanto, ao chegar, algo parece diferente..."
+  m_text: "Ao adormecer, Francis acorda no banco de frente do carro de seu pai. Agora
+    como uma crian\xE7a, sem entender direito o que est\xE1 acontecendo, ele logo
+    reconhece o caminho. \nEst\xE3o indo para o fliperama que ele costumava frequentar
+    quando era pequeno. No entanto, ao chegar, algo parece diferente..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 421d74ed1dd6524468e4ff256ed463f8, type: 2}
   m_sharedMaterial: {fileID: 6358587551808773041, guid: 421d74ed1dd6524468e4ff256ed463f8, type: 2}

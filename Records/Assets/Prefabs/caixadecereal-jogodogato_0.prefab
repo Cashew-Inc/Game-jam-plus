@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4120438781080602193}
   - component: {fileID: 5310120659498037239}
   - component: {fileID: 5430353126375179601}
+  - component: {fileID: 5637682114459784708}
   m_Layer: 0
   m_Name: caixadecereal-jogodogato_0
   m_TagString: Itens
@@ -171,3 +172,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fa3fb36c7c8acb478f9e6434f006d95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5637682114459784708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7317415134144217519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad765c106d572a84aa898a3217a4fa67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSpeed: 5
+  rotationSpeed: 100

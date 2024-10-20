@@ -6,6 +6,7 @@ public class GameOver : MonoBehaviour
     private FinishGame finishGameScript;
     public AudioSource loseAudioSource;
     public AudioSource backgroundAudioSource;
+    public GameOverHUD GameOverHUD;
     void Start()
     {
         loseCanvas.SetActive(false);
@@ -28,7 +29,8 @@ public class GameOver : MonoBehaviour
         isGameOver = true;
         if (!finishGameScript.getHasWon())
         {
-            loseCanvas.SetActive(true);
+            GameOverHUD.ShowGameOver();
+
         }
         loseAudioSource.Play();
         Time.timeScale = 0;
