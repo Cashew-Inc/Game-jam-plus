@@ -24,11 +24,11 @@ public class GameOverHUD : MonoBehaviour
         // Exibe o score final no pop-up de Game Over
         if (!finishGameScript.getHasWon())
         {
-            gameOverScoreText.text =  "Você Perdeu";
+            gameOverScoreText.text =  "Perdeu";
         }
         else
         {
-            gameOverScoreText.text = "Você Ganhou";
+            gameOverScoreText.text = "Ganhou";
         }
     }
 

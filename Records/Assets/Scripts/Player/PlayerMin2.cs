@@ -27,6 +27,7 @@ public class PlayerMini2 : MonoBehaviour
         _playerSprite = GetComponent<SpriteRenderer>();
 
         transform.position = positions[currentPositionIndex];
+        _playerAnim.SetLayerWeight(3, 1);
     }
 
     void Update()
@@ -46,7 +47,9 @@ public class PlayerMini2 : MonoBehaviour
         if (currentPositionIndex < positions.Length - 1)
         {
             currentPositionIndex++;
+
             TeleportPlayer();
+            _playerAnim.SetBool("walk", true);
         }
     }
 
@@ -56,6 +59,8 @@ public class PlayerMini2 : MonoBehaviour
         {
             currentPositionIndex--;
             TeleportPlayer();
+            _playerAnim.SetBool("walk", true);
+
         }
     }
 
@@ -64,7 +69,9 @@ public class PlayerMini2 : MonoBehaviour
         _playerRigidbody2D.MovePosition(positions[currentPositionIndex]);
 
         ResetLayers();
-        _playerAnim.SetLayerWeight(2, 1);
+        _playerAnim.SetLayerWeight(3, 1);
+
+        _playerAnim.SetBool("walk", false);
 
         if (currentPositionIndex > 2)
         {
@@ -75,7 +82,6 @@ public class PlayerMini2 : MonoBehaviour
             _playerSprite.flipX = true;
         }
 
-        _playerAnim.SetBool("walk", true);
     }
 
     private void ResetLayers()
@@ -83,5 +89,7 @@ public class PlayerMini2 : MonoBehaviour
         _playerAnim.SetLayerWeight(0, 0);
         _playerAnim.SetLayerWeight(1, 0);
         _playerAnim.SetLayerWeight(2, 0);
+        _playerAnim.SetLayerWeight(3, 0);
     }
+        
 }
