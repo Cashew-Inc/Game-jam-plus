@@ -9,11 +9,18 @@ public class GameOverScreen : MonoBehaviour
     public GameObject gameOverPanel; // Painel de Game Over (Pop-up)
     public TMP_Text gameOverScoreText; // Texto para mostrar o score no Game Over
     public PlayerMini1 PlayerMini1;
+    public AudioSource backgroundAudioSource;
+    public AudioSource lostAudioSource;
 
 
     // Função para ativar o Game Over e exibir a pontuação
     public void ShowGameOver()
     {
+        if (backgroundAudioSource != null && backgroundAudioSource.isPlaying)
+        {
+            backgroundAudioSource.Stop();
+        }
+        lostAudioSource.Play();
         // Ativa o painel de Game Over
         gameOverPanel.SetActive(true);
 
