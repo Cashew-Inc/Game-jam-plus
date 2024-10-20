@@ -24,11 +24,14 @@ public class GameOverScreen : MonoBehaviour
     public void Continuar()
     {
         // Recarrega a cena atual usando o nome dela
-        SceneManager.LoadScene("MiniGame 1");
+        SceneManager.LoadScene("MiniGame 1", LoadSceneMode.Single);
+        Time.timeScale = 1;
     }
 
     public void Sair()
     {
-        SceneManager.LoadScene("Sala_Fliperama");
+        SceneManager.LoadScene("Sala_Fliperama", LoadSceneMode.Single);
+        Time.timeScale = 1;
+
     }
 }
