@@ -9,6 +9,7 @@ public class Player1Lives : MonoBehaviour
     private int currentLives; // Vidas atuais
     public TMP_Text livesText; // Referência ao TextMeshPro para mostrar vidas
     private int fallCount = 0; // Contador de quedas
+    public GameOverScreen GameOverScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +50,9 @@ public class Player1Lives : MonoBehaviour
         Debug.Log("Game Over!");
         // Aqui você pode adicionar lógica para reiniciar o jogo ou mostrar uma tela de Game Over
         // Exemplo:
-        Time.timeScale = 0; // Pausa o jogo
+        Time.timeScale = 0;
+        GameOverScreen.ShowGameOver();
+        // Pausa o jogo
         // Ou você pode carregar uma nova cena
         // SceneManager.LoadScene("GameOverScene");
     }
