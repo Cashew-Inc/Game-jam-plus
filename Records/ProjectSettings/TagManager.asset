@@ -9,6 +9,9 @@ TagManager:
   - Itens
   - Imagens
   - texto
+  - Stone
+  - FinishLine
+  - Floor
   layers:
   - Default
   - TransparentFX
