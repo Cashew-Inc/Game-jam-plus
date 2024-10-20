@@ -3,7 +3,7 @@ using UnityEngine;
 public class TilemapMovement : MonoBehaviour
 {
     public Transform player; // Referência ao jogador
-    public float speed = 5f; // Velocidade do movimento do Tilemap
+    public float speed = 4f; // Velocidade do movimento do Tilemap
 
     void Update()
     {

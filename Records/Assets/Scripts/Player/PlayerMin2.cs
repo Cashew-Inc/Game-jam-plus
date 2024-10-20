@@ -10,15 +10,15 @@ public class PlayerMini2 : MonoBehaviour
 
     private Vector2[] positions = new Vector2[6]
     {
-        new Vector2(-5, 0),
-        new Vector2(-3, 0),
-        new Vector2(-1, 0),
-        new Vector2(1, 0),
-        new Vector2(3, 0),
-        new Vector2(5, 0)
+        new Vector2(-2.5f, 0),
+        new Vector2(-1.5f, 0),
+        new Vector2(-0.5f, 0),
+        new Vector2(0.5f, 0),
+        new Vector2(1.5f, 0),
+        new Vector2(2.5f, 0),
     };
 
-    private int currentPositionIndex = 2;
+    private int currentPositionIndex = 3;
 
     void Start()
     {

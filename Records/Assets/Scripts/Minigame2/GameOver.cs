@@ -4,6 +4,8 @@ public class GameOver : MonoBehaviour
     public GameObject loseCanvas;
     private bool isGameOver = false;
     private FinishGame finishGameScript;
+    public AudioSource loseAudioSource;
+    public AudioSource backgroundAudioSource;
     void Start()
     {
         loseCanvas.SetActive(false);
@@ -13,6 +15,10 @@ public class GameOver : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Stone") && !isGameOver)
         {
+            if (backgroundAudioSource != null && backgroundAudioSource.isPlaying)
+            {
+                backgroundAudioSource.Stop();
+            }
             TriggerGameOver();
         }
     }
@@ -24,6 +30,7 @@ public class GameOver : MonoBehaviour
         {
             loseCanvas.SetActive(true);
         }
+        loseAudioSource.Play();
         Time.timeScale = 0;
     }
 }
