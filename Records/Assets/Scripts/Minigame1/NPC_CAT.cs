@@ -24,5 +24,15 @@ public class NPC_CAT : MonoBehaviour
                 index = 0;
             }
         }
+
+        Vector2 direction = paths[index].position - transform.position;
+        if (direction.x > 0)
+        {
+            transform.eulerAngles = new Vector2(0, 0);
+        }
+        if (direction.x < 0)
+        {
+            transform.eulerAngles = new Vector2(0, 180);
+        }
     }
 }
